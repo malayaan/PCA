@@ -1,0 +1,37 @@
+3.1 Statistiques nécessaires pour l'ACP
+
+   1.1 Définir la matrice de données X.
+   1.2 En l'absence de précisions, supposer un poids statistique égal pour chaque point de données.
+       - Définir la matrice diagonale D avec des poids égaux pour chaque individu.
+   1.3 Calculer la moyenne des variables X et Y.
+   1.4 Centrer les données :
+       - Soustraire les valeurs moyennes de X pour obtenir la matrice de données centrée Z.
+   1.5 Calculer la matrice de covariance S.
+       - Extrayez les variances S^2(X) et S^2(Y), ainsi que la covariance cov(X,Y) de S.
+
+3.2 Calcul des valeurs propres
+
+   2.1 Calculer les valeurs propres λ1 et λ2 de la matrice de covariance S.
+   2.2 Vérifiez :
+       - La somme des valeurs propres est égale à la trace de la matrice de covariance S.
+       - Le déterminant de S est égal au produit λ1 × λ2.
+
+3.3 Calcul des vecteurs propres
+
+   3.1 En utilisant les expressions/formules fournies, calculer les vecteurs propres u1 et u2 correspondant aux valeurs propres λ1 et λ2.
+
+3.4 Vérification de 𝐼𝑠(u)
+
+   4.1 Calculer Is(u) pour les vecteurs propres.
+   4.2 Vérifiez la relation : 𝐼𝑠(u) = tu A u = λ tu u = λ ||u||^2.
+
+3.5 Vérification de l'inertie
+
+   5.1 Calculer l'inertie totale IT du nuage de données.
+   5.2 Vérifier :
+       - IT est égale à la somme des inerties statistiques portées par chaque axe principal : 𝐼𝑇 = 𝐼𝑠(u1) + 𝐼𝑠(u2).
+
+3.6 Représentation graphique 
+
+   6.1 Tracer les points de données.
+   6.2 Dessinez les axes principaux D1 et D2 en utilisant les vecteurs propres.
